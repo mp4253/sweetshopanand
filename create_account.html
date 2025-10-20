@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./create_account.css">
+
+    <script src="./create_account.js" defer></script>
+
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    
+    <div class="create_account">
+
+        <h1 class="main_heading">Create Account</h1>
+
+        <form id="createAccountForm" action="create_account.php" method="post">
+
+            <label for="first_field" id="username">Username:</label>
+
+            <br>
+            
+            <input type="text" id="first_field" name="usernooname" placeholder="Enter Username" required autocomplete="username">
+
+            <br>
+
+            <label for="second_field" id="email">Email:</label>
+
+            <br>
+
+            <input type="email" id="second_field" name="usernooemailing" placeholder="Enter Email" required>
+
+            <br>
+
+            <label for="third_field" id="password">Password:</label>
+            
+            <br>
+            
+            <div class="password-container">
+
+                <input type="password" id="third_field" name="usernoopassword" placeholder="Enter Password" 
+                required autocomplete="new-password" />
+
+
+                <i class="fas fa-spinner fa-flip-both fa-lg fa-spin" id="password_loader" ></i>
+
+
+                <input type="checkbox" id="checking_checkbox" onclick="check()" />
+                
+
+            </div>
+
+        
+            <label for="fourth_field" id="confirm_password">Confirm Password:</label>
+
+            <div class="confirm-password-container">
+                
+                <input type="password" id="fourth_field" name="usernooconfirmpassword" placeholder="Enter Confirm Password"
+                required autocomplete="new-password" />
+
+
+                <i class="fas fa-spinner fa-flip-both fa-lg fa-spin" id="confirm_password_loader"></i>
+
+
+                <input type="checkbox" id="confirm_checking_checkbox" onclick="check()" />
+                
+
+            </div>
+
+
+            <button type="submit" id="submit_btn" value="submit">Submit</button>
+        </form>
+
+        <div class="back_link">
+
+            <a href="./index.html">Back to Login</a>
+        
+        </div>
+        
+    </div>
+
+</body>
+
+</html>

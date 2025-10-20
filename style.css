@@ -1,0 +1,271 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: greenyellow;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    animation: gradientAnimation 5s infinite alternate;
+    background-size: 400% 400%;
+  }
+
+  body:hover {
+    background-image: linear-gradient(to right, #00ccff, #0099ff);
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-image: linear-gradient(to right, #ff6600, #ffcc00);
+    }
+    50% {
+      background-image: linear-gradient(to right, #00ccff, #0099ff);
+    }
+    100% {
+      background-image: linear-gradient(to right, #ff6600, #ffcc00);
+    }
+  }
+
+
+  .loginBox {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    max-width: 90vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.2);
+    text-align: center;
+    border: 2px solid black;
+  }
+
+  #heading {
+    margin-bottom: 20px;
+    color: black;
+    text-shadow: 2px 2px 2px red;
+    font-size: 1.8rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  input[type="email"],input[type="password"],input[type="text"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+
+  input[type="email"]:focus,input[type="password"]:focus,input[type="text"]:focus {
+    border-color: blue;
+    outline: none;
+  }
+
+
+  .unified-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.unified-input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+  .password_container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+
+  #loader {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
+
+  #pass_word:focus + #loader,
+  #pass_word:not(:placeholder-shown) + #loader {
+    opacity: 1;
+  }
+
+  .checkbox_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: -6px;
+  }
+
+  #checking_checkbox {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: blue;
+    transform: scale(1.2);
+  }
+
+  #submit_btn {
+    margin-top: 18px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #submit_btn:hover,
+  #submit_btn:focus {
+    background-color: chartreuse;
+    color: red;
+    outline: none;
+  }
+
+  .links {
+    margin-top: 16px;
+  }
+
+  .links a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    margin: 6px 0;
+    font-size: 0.9rem;
+    user-select: none;
+  }
+
+  .links a:hover,
+  .links a:focus {
+    text-decoration: underline;
+    outline: none;
+  }
+
+  .icons {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .icons a {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  .icons a:hover,
+  .icons a:focus {
+    transform: scale(1.1);
+    outline: none;
+  }
+
+  .icon {
+    width: 45px;
+    height: 40px;
+    object-fit: contain;
+    user-select: none;
+  }
+
+  
+  @media (max-width: 480px) {
+    .loginBox {
+      width: 90vw;
+      padding: 15px;
+    }
+
+
+    #heading {
+      font-size: 1.5rem;
+    }
+
+
+    label {
+      font-size: 14px;
+    }
+
+
+    input[type="email"], input[type="password"], input[type="text"] {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+
+    .unified-input {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+   }
+
+    #submit_btn {
+      padding: 10px 0;
+      font-size: 1rem;
+    }
+
+
+    .icon {
+      width: 36px;
+      height: 32px;
+    }
+
+
+    #checking_checkbox {
+      width: 18px;
+      height: 18px;
+      transform: scale(1.1);
+    }
+
+
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+    .loginBox {
+      width: 350px;
+      max-width: 90vw;
+    }
+
+
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .loginBox {
+      width: 380px;
+    }
+
+
+  }
+
+  @media (min-width: 1025px) {
+    .loginBox {
+      width: 400px;
+    }
+
+    
+  }

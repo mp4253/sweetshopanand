@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Meet Patel">
+  <meta http-equiv="refresh" content="30">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="loginBox">
+    <h1 id="heading">Login</h1>
+    <form id="loginForm" action="#" method="post" novalidate>
+
+      <label for="email_id" id="first">Email Id:</label>
+      <input type="email" id="email_id" name="usernooemailid" placeholder="Enter Email Id." required="required"
+        autocomplete="username">
+
+
+      <label for="pass_word" id="second">Password:</label>
+
+      <div class="password_container">
+
+        <input type="password" id="pass_word" oninput="spinning()" name="usernoopassword" placeholder="Enter Password"
+          required="required" autocomplete="current-password" class="unified-input">
+
+        <i class="fas fa-spinner fa-flip-both fa-lg fa-spin" id="loader"></i>
+      </div>
+
+      <div class="checkbox_container">
+
+        <input type="checkbox" id="checking_checkbox" onclick="check()">
+        <label for="checking_checkbox">Show Password</label>
+
+      </div>
+
+      <button type="submit" id="submit_btn" value="submit">Sign In</button>
+
+    </form>
+
+    <div class="links">
+      <a href="./forget_password.html">Forgot your password?</a>
+      <a href="./create_account.html">Don't have an account?</a>
+    </div>
+
+    <div class="icons">
+
+      <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+        <img src="./google.webp" alt="Google" class="icon">
+      </a>
+
+      <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+        <img src="./github.webp" alt="GitHub" class="icon">
+      </a>
+
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="./facebook.webp" alt="Facebook" class="icon">
+      </a>
+
+      <a href="https://www.telegram.org" target="_blank" rel="noopener noreferrer">
+        <img src="./telegram.webp" alt="Telegram" class="icon">
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

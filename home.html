@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sweetshop</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./home.css">
+    
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header_container">
+            <h1 id="heading_line">Sweetshop</h1>
+            <p id="tag_line">The world's largest sweetshop.</p>
+        </div>
+    </header>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./home.js" defer></script>
+
+
+    <nav>
+        <div class="navbar_container">
+            <div class="search_container">
+                <input type="search" id="searching_text" name="search" placeholder="Search sweets items">
+                <button type="submit" id="btn_search">
+                    &#128269;
+                </button>
+            </div>
+
+            <div class="hamburger" onclick="toggleMenu()">
+                &#9776;
+            </div>
+
+            <ul class="menu_list">
+                <li><a href="home.html" onclick="navigate('Home')">Home</a>
+                </li>
+                <li><a href="sweets.html" onclick="navigate('Sweets')">Sweets</a>
+                </li>
+                <li><a href="#about_us_container" onclick="navigate('About Us')">About Us</a>
+                </li>
+                <li><a href="#contact_us" onclick="navigate('Contact Us')">Contact Us</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <section>
+
+        <div class="addressing_container">
+            <address id="store_address">
+                Venue: Patel Nagar,&nbsp;Anand-388001.
+            </address>
+
+            <address id="store_mobile_no">
+                Order Online: +91 1234567890, 9876543210.
+            </address>
+        </div>
+
+
+        <div class="sweets_images">
+
+            <div class="sweets_photos_images">
+
+                <h2 id="sweets_title_inside_box">Our Popular Sweets</h2>
+
+                <div class="sweets_box_image">
+
+                    <img loading="lazy" src="./one.webp" alt="all_sweets" class="sweets_albums_first_image">
+
+                    <img loading="lazy" src="./two.webp" alt="dates_ladoo" class="sweets_albums_second_image">
+
+                    <img loading="lazy" src="./three.webp" alt="gulab_jamun" class="sweets_albums_third_image">
+
+                    <img loading="lazy" src="./four.webp" alt="kaju_katli" class="sweets_albums_fourth_image">
+
+                    <img loading="lazy" src="./five.webp" alt="gulab_jamun" class="sweets_albums_fifth_image">
+
+                    <img loading="lazy" src="./six.webp" alt="mixed_sweets_kaju_katlis"
+                        class="sweets_albums_sixth_image">
+
+                </div>
+
+            </div>
+
+            <div class="table_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="sweets_name">Sweets Name</th>
+                            <th id="sweets_price">Sweets Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sweets_name_column">Peda</td>
+                            <td class="sweets_price_column">&#8377;200/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Modak Ladoo</td>
+                            <td class="sweets_price_column">&#8377;200/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Barfi</td>
+                            <td class="sweets_price_column">&#8377;250/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Imarti</td>
+                            <td class="sweets_price_column">&#8377;300/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Rasgulla</td>
+                            <td class="sweets_price_column">&#8377;100/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Kala Jam</td>
+                            <td class="sweets_price_column">&#8377;150/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Halvasan</td>
+                            <td class="sweets_price_column">&#8377;250/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Soan Papdi</td>
+                            <td class="sweets_price_column">&#8377;200/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Kaju Katli</td>
+                            <td class="sweets_price_column">&#8377;740/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Rava Halva</td>
+                            <td class="sweets_price_column">&#8377;300/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Gulab Jamun</td>
+                            <td class="sweets_price_column">&#8377;100/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Mixnut Halva</td>
+                            <td class="sweets_price_column">&#8377;150/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Moong Dal Halva</td>
+                            <td class="sweets_price_column">&#8377;250/-kg</td>
+                        </tr>
+                        <tr>
+                            <td class="sweets_name_column">Chocolate Barfi</td>
+                            <td class="sweets_price_column">&#8377;200/-kg</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="online_order_box_container">
+
+            <div class="fieldsetting">
+
+                <fieldset>
+
+                    <legend class="order_title">Order Online</legend>
+
+                    <form id="order_online">
+
+                        <label for="full_naming">Full Name:<mark>(Hint:- First Name Middle Name Last Name)</mark>
+                        </label>
+                        <input type="text" name="full_name" id="full_naming" required
+                            placeholder="Enter Your Full Name as per given hint.">
+
+                        <label for="phone_numbering">Mobile No.:</label>
+                        <input type="number" name="mobile_number" id="phone_numbering" required
+                            placeholder="Enter Your Mobile Number.">
+
+                        <label for="email_iding">Email Id:</label>
+                        <input type="email" name="email_id" id="email_iding" required
+                            placeholder="Enter Your Email id.">
+
+                        <label for="order_addressing">Address:</label>
+                        <textarea name="address" placeholder="Please Enter Your Address." required
+                            id="order_addressing"></textarea>
+
+
+                        <label for="pin_coding">Pin Code:</label>
+                        <input type="number" name="pin_code" id="pin_coding" required placeholder="Enter Your Pin Code."
+                            pattern="\d{6}" inputmode="numeric" maxlength="6">
+
+
+                        <button type="submit" value="Save Information for Order" id="save_information_order_btn">
+                            Save Information for Order
+                        </button>
+
+                    </form>
+
+                </fieldset>
+
+            </div>
+
+
+            <div id="about_us_container">
+
+                <div class="about_us_title">
+                    About Us
+                </div>
+
+                <div class="lining">
+                    <hr width="450px">
+                </div>
+
+                <div class="about_paragrapphing">
+                    Welcome to Sweetshop, your ultimate destination for delightful and irresistible sweets crafted to
+                    bring joy and sweetness to every moment of your life. At Sweetshop, we believe that sweets are more
+                    than just treats—they are a source of happiness, nostalgia, celebration, and love. Whether it’s a
+                    festive occasion, a small gathering, or simply a moment of self-indulgence, our sweets add that
+                    special touch to make every experience truly memorable.
+
+                    Each of our confections is carefully made using the finest ingredients, blending traditional recipes
+                    passed down through generations with modern techniques and innovative flavors. We take great pride
+                    in offering a unique and satisfying experience for every customer.
+                    <!-- From rich, handcrafted chocolates and traditional Indian sweets like laddoos, barfis, and jalebis to freshly baked cakes, cookies,
+                    pastries, and globally inspired delicacies, our wide selection is designed to cater to every taste,
+                    preference, and occasion. -->
+                    <br>
+
+                    <strong>
+                        Thank you for choosing
+                        Sweetshop. We are excited to be a part of your celebrations and everyday pleasures, and we look
+                        forward to
+                        serving you with love, care, and the sweetest smiles.
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="extra_sweets_container">
+
+            <div class="more_sweet_title">
+                More Sweets
+            </div>
+
+            <div class="sweets_pictures">
+
+                <div class="final_images_first">
+
+                    <img loading="lazy" id="mava_sweets" src="./mava_sweets.webp" alt="mava_sweets">
+
+                    <p class="sweets_paragraph">Dryfruit White Peda</p>
+
+                    <p class="sweets_price_bottom"><b>&#8377;150/- kg</b></p>
+
+                    <button id="more_buy_btn" onclick="addToCart('Dryfruit White Peda', 150)">
+                        Add to Cart
+                    </button>
+
+                </div>
+
+                <div class="final_images_second">
+                    <img loading="lazy" id="mixed_sweets" src="./mixed_sweets.webp" alt="mixed_sweets">
+
+                    <p class="sweets_paragraph">Mixed Sweets</p>
+
+                    <p class="sweets_price_bottom"><b>&#8377;500/- kg</b></p>
+
+                    <button id="more_buy_btn" onclick="addToCart('Mixed Sweets', 500)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="final_images_third">
+                    <img loading="lazy" id="nutty_sweets" src="./nutty_sweets.webp" alt="nutty_sweets">
+
+                    <p class="sweets_paragraph">Dryfruit Keshar Peda</p>
+
+                    <p class="sweets_price_bottom"><b>&#8377;350/- kg</b></p>
+
+                    <button id="more_buy_btn" onclick="addToCart('Dryfruit Keshar Peda', 350)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="final_images_fourth">
+                    <img loading="lazy" id="simli_sweets" src="./simli_sweet.webp" alt="simli_sweets">
+
+                    <p class="sweets_paragraph">Chocolate Ladoo</p>
+
+                    <p class="sweets_price_bottom"><b>&#8377;250/- kg</b></p>
+
+                    <button id="more_buy_btn" onclick="addToCart('Chocolate Ladoo', 250)">
+                        Add to Cart
+                    </button>
+                </div>
+
+                <div class="final_images_fifth">
+                    <img loading="lazy" id="sweet_pastries" src="./sweet_pastries.webp" alt="sweet_pastries">
+
+                    <p class="sweets_paragraph">Mixed Different Sweet</p>
+
+                    <p class="sweets_price_bottom"><b>&#8377;650/- kg</b></p>
+
+                    <button id="more_buy_btn" onclick="addToCart('Mixed Different Sweet', 650)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./mava_sweets.webp" style="width:100%">
+                    <div class="text">
+                        <p class="sweets_paragraph">Mixed Different Sweet</p>
+
+                        <p class="sweets_price_bottom"><b>&#8377;650/- kg</b></p>
+
+                        <button id="more_buy_btn" onclick="addToCart('Mixed Different Sweet', 650)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./mixed_sweets.webp" style="width:100%">
+                    <div class="text">
+                        <p class="sweets_paragraph">Mixed Different Sweet</p>
+
+                        <p class="sweets_price_bottom"><b>&#8377;650/- kg</b></p>
+
+                        <button id="more_buy_btn" onclick="addToCart('Mixed Different Sweet', 650)">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="./simli_sweet.webp" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br> -->
+
+
+
+        </div>
+
+        <div class="cart_icon" onclick="goToCartPage()">
+            🛒 Cart (<span id="cart_count">0</span>)
+        </div>
+
+
+    </section>
+
+    <footer>
+
+        <div id="contact_us">
+
+            <h1 align="center">Contact Us</h1>
+
+            <address id="contact_info_1">Website: Sweetshop</address>
+            <address id="contact_info_2">Contact No: +91 1234567890</address>
+            <address id="contact_info_3">Email id: abc123@gmail.com</address>
+            <address id="contact_info_4">Address: Patel Nagar,Anand,Gujarat-388001.</address>
+
+        </div>
+
+        <div id="developer_info">Developed By: Meet Patel.</div>
+
+        <div id="social_link">
+
+            <h1 align="center">Follow Us On</h1>
+
+            <a href="https://www.instagram.com/"><img src="instagram.webp" id="social_logos" /></a>
+            <a href="https://www.facebook.com/"><img src="facebook.webp" id="social_logos" /></a><br>
+            <a href="https://web.telegram.org/"><img src="telegram.webp" id="modifying_social_logos" /></a>
+            <a href="https://x.com/"><img src="twitter.webp" id="modifying_social_logos" /></a>
+
+
+        </div>
+
+    </footer>
+
+
+
+
+    <!-- <script src="" defer></script> -->
+
+</body>
+
+</html>
